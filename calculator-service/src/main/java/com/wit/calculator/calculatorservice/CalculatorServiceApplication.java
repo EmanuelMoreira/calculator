@@ -4,6 +4,7 @@ import com.wit.calculator.DTO.OperationDTO;
 import com.wit.calculator.operations.Operation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,5 +22,9 @@ public class CalculatorServiceApplication {
 
 		log.info("Result from Operation: "+result);
 		return result;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(CalculatorServiceApplication.class, args);
 	}
 }
